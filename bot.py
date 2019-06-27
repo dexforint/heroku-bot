@@ -25,7 +25,7 @@ apihelper.proxy = {'https':'socks5://144.217.56.17:12128'}
 def start_message(message):
     bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
 
-bot.polling()
+bot.polling(none_stop=True)
 
 # import requests
 
